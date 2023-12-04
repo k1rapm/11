@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+    padding-top: 10px;
+}
+.hp1{
+text-align: center;
+color: black;
+font-size: 34px;
+font-weight: 500;
+}
+.hp2{
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}
+.span{
+background-color: black;
+color: white;
+padding: 4px 8px;
+}
+.big{ 
+    display: flex;
+    padding-left:120px ;
+    padding-right:120px ;
+    margin-top: 50px;
+}
+.block1{
+    border: 1px solid black;
+    background-color: white;
+    width: 876px;
+    height: 600px;
+}
+.line1{
+    margin-right: 30px;
+
+}
+.ppp{
+background-color: white;
+width: 876px;
+}
+.block1{
+    margin-top: 40px;
+    box-shadow: 0px 0px 10px black ;
+}
+.p1{
+    display: flex;
+    background-color: white;
+
+}
+.ptext1{
+    padding-top: 10px;
+    font-size: 25px;
+    margin-top: 5px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ptext2{
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 100;
+    margin-bottom: 25px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.April{
+    color: rgb(174, 174, 174);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+
+    
+}
+.btext{
+    font-weight: 100;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+
+
+}
+.rm{
+margin-left: 20px;
+border: 1px solid black;
+padding: 14px 14px;
+font-weight: 500;
+background-color: white;
+}
+span{
+    font-size: 15px;
+    background-color: #f1f1f1f1;
+    padding: 1px;
+    margin-left: 8px;
+    margin-top: 15px;
+}

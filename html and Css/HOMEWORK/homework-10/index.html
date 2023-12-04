@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lakra</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+      }
+      .logo-text {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 200px;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .about-text-1 {
+        font-family: sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 130%;
+        margin-bottom: 20px;
+      }
+
+      .about-text-2 {
+        color: var(--black, #252525);
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 130%;
+      }
+
+      .about-button {
+        padding: 8px 20px;
+        width: 120px;
+        background: var(--light-grey, #c4c4c4);
+        margin-top: 40px;
+      }
+
+      .s1 {
+        padding: 100px 200px;
+      }
+
+      .about-block {
+        margin-top: 100px;
+        font-family: sans-serif;
+      }
+      .block12 {
+        margin-right: 100px;
+      }
+      .block13 {
+        margin-left: -100px;
+      }
+      .section4 {
+        padding: 20px 200px;
+      }
+      .section4 h1 {
+        font-size: 50px;
+        font-weight: 900;
+        margin-bottom: 30px;
+      }
+      .section4 p {
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: 50px;
+        width: 500px;
+      }
+      .map {
+        margin-left: 100px;
+        margin-bottom: 100px;
+      }
+
+      .s5 _display {
+        display: flex;
+      }
+      .s5 _contact {
+        font-size: 25px;
+        font-weight: 200;
+        text-align: center;
+      }
+      .s5 _contact1 {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 50px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 35px;
+      }
+      .contact_us {
+        width: 100%;
+        padding: 40px 200px;
+        background-color: rgb(51, 49, 49);
+        height: 220px;
+      }
+      .s5 _text1 {
+        font-size: 27px;
+        font-weight: 500;
+        margin-bottom: 35px;
+        color: white;
+      }
+      .s5 _text2 {
+        width: 250px;
+        font-size: 18px;
+        font-weight: 100;
+        margin-bottom: 35px;
+        color: rgb(194, 187, 187);
+      }
+      .s5 _text3 {
+        width: 250px;
+        font-size: 18px;
+        font-weight: 100;
+        color: rgb(194, 187, 187);
+        font-family: "Courier New", Courier, monospace;
+      }
+      .s5 _icon {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+      }
+      .s3 {
+        font-family: "Courier New", Courier, monospace;
+        padding: 20px 200px;
+        margin-bottom: 50px;
+        margin-top: 150px;
+      }
+      .s3_h1 {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 50px;
+        font-weight: 900;
+        margin-bottom: 40px;
+      }
+      .s3_text1 {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 20px;
+        padding: 10px;
+        border-bottom: 2px solid black;
+        width: 320px;
+      }
+      .image_forward {
+        margin-left: 36px;
+        width: 15px;
+        height: 15px;
+      }
+      .image_forward2 {
+        margin-left: 125px;
+        width: 15px;
+        height: 15px;
+      }
+      .image_forward3 {
+        margin-left: 200px;
+        width: 15px;
+        height: 15px;
+      }
+      .s3_blocks {
+        display: flex;
+        margin-bottom: 60px;
+      }
+      .s3_photo {
+        margin-left: 450px;
+      }
+      .s3_photo2 {
+        margin-left: 150px;
+        margin-right: 330px;
+        margin-top: 60px;
+      }
+      .s3_h2 {
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 30px;
+      }
+      .s3_text2 {
+        width: 550px;
+        font-size: 19px;
+        color: rgba(37, 37, 37, 1);
+        margin-bottom: 30px;
+      }
+      .s3_button {
+        padding: 10px;
+        font-size: 15px;
+        background-color: rgb(175, 167, 167);
+        border: none;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="./img/logo.svg" alt="logo" />
+      </div>
+      <div class="logo-text">
+        <p>Главная</p>
+        <p>О компании</p>
+        <p>Бренды</p>
+        <p>Развития и технологии</p>
+        <p>Карьера в компании</p>
+        <p>Партнеры и поставщики</p>
+        <p>Публикации ></p>
+        <p>Контакты</p>
+      </div>
+
+      <img src="./img/01.main.png" alt="block-1" style="width: 100%" />
+    </div>
+
+    <section class="s1">
+      <div class="about">
+        <p class="about-text-1">О компании</p>
+        <p class="about-text-2">
+          На российском рынке Lakra Sintez является ведущим <br />
+          производителем декоративных красок и покрытий. По оценке<br />
+          аналитиков рынка входит в ТОП-3 компаний-производителей <br />
+          отрасли. Успешно развивает новые направления деятельности:<br />
+          клеевые материалы и дисперсии
+        </p>
+        <p class="about-button">Узнать больше ></p>
+      </div>
+      <div
+        class="about-block"
+        style="display: flex; justify-content: space-around"
+      >
+        <div class="block11">
+          <p
+            style="
+              font-family: sans-serif;
+              font-size: 48px;
+              font-weight: 700;
+              padding-right: 200px;
+              margin-bottom: 20px;
+            "
+          >
+            25 лет
+          </p>
+          <p
+            style="
+              border-right: 2px solid gray;
+              font-family: sans-serif;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 130%;
+            "
+          >
+            С 1996 г. мы производим и <br />
+            продаём широкий спектр <br />
+            лакокрассочнх материалов
+          </p>
+        </div>
+        <div class="block12">
+          <p
+            style="
+              font-family: sans-serif;
+              font-size: 48px;
+              font-weight: 700;
+              padding-right: 100px;
+              margin-bottom: 20px;
+            "
+          >
+            11.000 точек
+          </p>
+          <p
+            style="
+              border-right: 2px solid gray;
+              font-family: sans-serif;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 130%;
+            "
+          >
+            Наша продукция <br />
+            представлена свыше 11 тыс. <br />
+            торговых точек по всей России
+          </p>
+        </div>
+        <div class="block13">
+          <p
+            style="
+              font-family: sans-serif;
+              font-size: 48px;
+              font-weight: 700;
+              padding-right: 60px;
+              margin-bottom: 20px;
+            "
+          >
+            40.000 литров
+          </p>
+          <p
+            style="
+              font-family: sans-serif;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 130%;
+            "
+          >
+            За 25 лет работы реализовали <br />
+            более 1 млн. литров <br />
+            разнообразных материалов <br />
+            для отделки и ремонта
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="2">
+      <img src="./img/video.svg" alt="vidio" style="width: 100%" />
+      <p
+        style="
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 29px;
+          margin-left: 1000px;
+          margin-top: 50px;
+          color: rgb(77, 76, 76);
+        "
+      >
+        На российском рынке Lakra Sintez является <br />
+        ведущим производителем декоративных красок <br />
+        и покрытий. По оценке аналитиков рынка входит <br />
+        в ТОП-3 компаний-производителей отрасли. <br />
+        Успешно развивает новые направления <br />
+        деятельности: клеевые материалы и дисперсии
+      </p>
+    </section>
+    <section class="s3">
+      <h1 class="s3_h1">Бизнес - подразделения</h1>
+      <div class="s3_blocks">
+        <div>
+          <p class="s3_text1">Декоративные ЛКМ покрытия ></p>
+          <p class="s3_text1">Клеевые материалы ></p>
+          <p class="s3_text1">Дисперсии ></p>
+        </div>
+        <img class="s3_photo" src="./img/img.png" alt="" />
+      </div>
+      <div>
+        <div class="s3_blocks">
+          <div>
+            <img class="s3_photo2" src="./img/img.png" alt="" />
+          </div>
+
+          <div>
+            <h2 class="s3_h2">PARADE MEDITERRA S60</h2>
+            <p class="s3_text2">
+              Декоративное покрытие с эффектом в средиземноморском стиле или под
+              «старину» образует ударопрочное эластичное воздухопроницаемое
+              покрытие. Как обои легко снимается со стен шпателем после
+              пропитывания водой. Скрывает небольшие неровности основания.
+            </p>
+            <button class="s3_button">Узнать больше ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section4">
+      <h1>География присутствия</h1>
+      <p>
+        Производственные площадки, распределительные центры расположены в
+        основных регионах присутствия. География продаж – вся Россия.
+      </p>
+      <img class="map" src="./img/img.svg" alt="" />
+    </section>
+
+    <section class="s5">
+      <h2 class="s5 _contact">Контакты</h2>
+      <h3 class="s5 _contact1">Обратная связь</h3>
+
+      <div class="s5 _display">
+        <div class="contact_us">
+          <p class="s5 _text1">Корпоративный центр</p>
+          <p class="s5 _text2">
+            ООО «Lakra Sintez» М.О. г. Ногинск, г. Старая Купавна, ул. Дорожная,
+            д. 5
+          </p>
+          <p class="s5 _text3">Тел.: +7 (495) 995-78-58</p>
+          <p class="s5 _text3">Факс: +7 (495) 702-96-49 (50)</p>
+        </div>
+        <div class="contact_us">
+          <p class="s5 _text1">Быстрые ссылки</p>
+          <p class="s5 _text2">по вопросам закупки продукции</p>
+          <p class="s5 _text3">info@lakra.ru</p>
+          <div class="s5 _icon">
+            <img class="icon" src="./img/Facebook - Original.png" alt="" />
+            <img class="icon" src="./img/VK - Original.png" alt="" />
+            <img class="icon" src="./img/Twitter - Original.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

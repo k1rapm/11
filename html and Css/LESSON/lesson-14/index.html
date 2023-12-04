@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-14</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .block1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgb(211, 130, 238);
+            background-color: rgb(222, 144, 255);
+            animation: a 5s infinite;
+            position: absolute;
+        }
+        .block2{
+            margin-left: 500px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgb(211, 130, 238);
+            background-color: rgb(255, 255, 157);
+            animation: b 5s infinite;
+            position: absolute;
+        }
+        @keyframes a {
+            0%{
+            top: 0px;
+            left: 0px;
+            }
+            25%{
+            top: 0px;
+            left: 500px;
+            }
+            50%{
+            left: 500px;
+            top: 500px;
+            }
+            75%{
+            left: 0px;
+            top: 500px;  
+            }
+            100%{
+            left: 0px;
+            top: 0px;
+            }
+        }
+        @keyframes b {
+            0%{
+            top: 0px;
+            left: 0px;
+            }
+            25%{
+            top: 0px;
+            left: 500px;
+            }
+            50%{
+            left: 500px;
+            top: 500px;
+            }
+            75%{
+            left: 0px;
+            top: 500px;  
+            }
+            100%{
+            left: 0px;
+            top: 0px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="block1">
+
+    </div>
+    <div class="block2">
+
+    </div>
+
+</body>
+</html>

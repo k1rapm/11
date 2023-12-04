@@ -1,0 +1,2680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exam-3</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header{
+        position: fixed;
+        width: 100%;
+        z-index: 15;
+      }
+      .navbar {
+        display: block;
+      }
+      .navbar-m {
+        display: none;
+      }
+      #s1-m {
+        display: none;
+      }
+      #s1 {
+        display: block;
+      }
+      .navbar {
+        z-index: 10;
+        background-color: #fff;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 9vh;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 160px;
+      }
+      .nav p {
+        padding-top: 25px;
+        color: #212121;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .s1-block {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        margin-top: 80px;
+        height: 780px;
+        background-image: url(./img/Rectangle\ 122.png);
+        display: flex;
+      }
+      .s1-text {
+        padding-left: 300px;
+        padding-top: 200px;
+      }
+      .pa1 {
+        color: #212121;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 20.8px */
+        width: 90px;
+      }
+      .pa2 {
+        display: flex;
+        justify-content: space-around;
+        width: 150px;
+        padding: 20px 0px;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      .s2-text-1 {
+        text-align: center;
+        color: #212121;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 550;
+        line-height: 120%; /* 43.2px */
+      }
+      .s2-text-2 {
+        color: #212121;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 26px */
+        width: 940px;
+        margin: auto;
+        margin-top: 30px;
+      }
+      .s2-header-p2 {
+        color: #7a7a7a;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 300;
+        padding-bottom: 15px;
+        line-height: 130%; /* 33.8px */
+      }
+      .s2-header-p1 {
+        color: #212121;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 33.8px */
+        border-bottom: 3px solid rgb(0, 0, 0);
+        margin-bottom: -2px;
+      }
+      .s2 {
+        margin-top: 200px;
+        margin-bottom: 200px;
+        padding: 0px 200px;
+      }
+      .s2-header {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        border-bottom: 3px solid rgb(200, 200, 200);
+      }
+      .s2-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .s2-block-1 {
+        border-radius: 20px;
+        margin-top: 50px;
+        width: 115px;
+        padding: 50px 35px;
+        background-color: #f0f0f0;
+      }
+      .s2-block-1:hover {
+        border-radius: 20px;
+        margin-top: 50px;
+        width: 120px;
+        padding: 50px 40px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        text-decoration: none;
+      }
+      .s2-block-1 p {
+        margin-top: 20px;
+        color: #212121;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 20.8px */
+      }
+      .s3-text-1 {
+        color: #212121;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 550;
+        width: 770px;
+        line-height: 120%; /* 43.2px */
+      }
+      .s3-text-2 {
+        color: #212121;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 26px */
+        width: 940px;
+        margin-top: 30px;
+      }
+      .s4 {
+        background-image: url(./img/Rectangle\ 78.png);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+      }
+      .s4-text {
+        width: 430px;
+        color: #212121;
+        text-align: center;
+        font-size: 18px;
+        margin: auto;
+        margin-top: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 180%; /* 19.2px */
+        padding-bottom: 30px;
+      }
+      .s5 {
+        margin-top: 200px;
+      }
+      .s5-h1 {
+        text-align: center;
+        color: #212121;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 550;
+        line-height: 120%; /* 43.2px */
+      }
+      .s5-h2 {
+        margin-top: 30px;
+        text-align: center;
+        color: #212121;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 24px */
+      }
+      .s5-block {
+        border-radius: 30px;
+        padding: 20px 10px;
+        margin-top: 100px;
+        background-color: #f0f0f0;
+        width: 300px;
+      }
+      .s5-block-text1 {
+        color: #fff;
+        text-align: center;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 130%; /* 130px */
+      }
+      .s5-block-text2 {
+        color: #212121;
+        text-align: center;
+        width: 240px;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 19.2px */
+      }
+      .line1 {
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+      .line2 {
+        margin-top: 30px;
+        margin-left: 50px;
+      }
+      .s5-img {
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .s5-b {
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1290px;
+      }
+      .s6 {
+        margin-top: 200px;
+      }
+      .s6-block {
+        margin: auto;
+        width: 885px;
+        padding: 30px 0px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #f0f0f0;
+        margin-top: 100px;
+      }
+      .s6-b {
+        margin-left: -50px;
+        border-radius: 10px;
+        background: #212121;
+        box-shadow: 3px 10px 20px 0px rgba(0, 0, 0, 0.25);
+        width: 620px;
+        padding: 40px 0px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-around;
+      }
+      .s6-b2 {
+        position: relative;
+        margin: 30px 0px;
+        padding: 30px 0px;
+        width: 280px;
+        background-color: #212121;
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        right: -80px;
+      }
+      .s6flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .s6s1 {
+        letter-spacing: 10px;
+        color: #fff;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .s6s2 {
+        color: #fff;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .s7 {
+        margin-top: 100px;
+      }
+      .s7-p1 {
+        margin-top: 50px;
+        text-align: center;
+        color: #212121;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 550;
+        line-height: 120%; /* 43.2px */
+      }
+      .s7-p2 {
+        margin-top: 50px;
+        text-align: center;
+        color: #808080;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 24px */
+      }
+      .s7s1 {
+        color: #808080;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 220%; /* 24px */
+      }
+      .s7s2 {
+        margin-left: 20px;
+        color: #212121;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 550;
+        line-height: 120%; /* 24px */
+      }
+      .s7-block {
+        margin-top: 100px;
+      }
+      .s7-b {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1200px;
+      }
+      .s7-block-b {
+        margin-top: 100px;
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+        padding: 0px 50px;
+      }
+      .s7-button {
+        margin-top: -20px;
+        margin-left: 10px;
+        background: #000;
+        width: 170px;
+        padding: 20px 10px;
+        border-radius: 70px;
+        flex-shrink: 0;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .s8 {
+        margin-top: 200px;
+      }
+      .s8-h {
+        text-align: center;
+        color: #212121;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 550;
+        line-height: 120%; /* 43.2px */
+      }
+      .s8-block {
+        margin-top: 150px;
+        border-radius: 20px;
+        display: flex;
+        width: 600px;
+        background-color: #f0f0f0;
+      }
+      .s8-block p {
+        border-bottom: 1px solid gray;
+        width: 293px;
+
+        padding: 30px 50px;
+      }
+      .s8-b {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .s8-block-m {
+        display: none;
+      }
+      .s8-img-m {
+        display: none;
+      }
+      .s9 {
+        margin-top: 200px;
+      }
+      .s9-block1 {
+        opacity: 90%;
+        padding: 30px;
+        margin-top: 100px;
+        width: 700px;
+        height: 500px;
+        border-radius: 10px;
+        background-image: url(./img/загружено\ 1.png);
+        background-color: #21212199;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .s9-block1 p {
+        padding: 20px 0px;
+        color: #b0b0b0;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 550;
+        line-height: 120%; /* 24px */
+      }
+      .s9-block1 span {
+        color: white;
+      }
+      .s9-block2 {
+        margin-top: 170px;
+        padding: 30px;
+        border-radius: 20px;
+        background: #efefef;
+        width: 420px;
+        height: 380px;
+        flex-shrink: 0;
+        margin-left: -100px;
+        position: relative;
+        z-index: 3;
+      }
+      .s9-b {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 250px;
+      }
+      .k2 {
+        border-bottom: 2px solid gray;
+        width: 600px;
+        padding: 10px;
+      }
+      .k1 {
+        margin-top: 50px;
+        border-bottom: 2px solid gray;
+        width: 600px;
+        padding-bottom: 50px;
+      }
+      .s9-block2-m {
+        display: none;
+      }
+      .s10 {
+        margin-top: 200px;
+      }
+      .s10-p1 {
+        margin: auto;
+        margin-top: 100px;
+        color: #000;
+        width: 1000px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 20.8px */
+      }
+      .s10-p2 {
+        margin: auto;
+        margin-top: 20px;
+        color: #000;
+        width: 1000px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 20.8px */
+      }
+      .s11 {
+        margin-top: 200px;
+        background: #efefef;
+        width: 100%;
+        padding-bottom: 100px;
+      }
+      .s11-b {
+        display: flex;
+        justify-content: space-around;
+      }
+      .s11-block1 {
+        padding-top: 200px;
+        padding-left: 200px;
+      }
+      .s11-ot {
+        color: #212121;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 550;
+        line-height: 120%; /* 43.2px */
+      }
+      .s11b {
+        margin-top: 50px;
+        background-color: white;
+        width: 450px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .s11b1 {
+        width: 130px;
+        padding: 20px;
+      }
+      .s11b2 {
+        padding: 20px;
+      }
+      .s11b2 p {
+        padding: 20px 0px;
+      }
+
+      .s11-button {
+        background: #000;
+        width: 170px;
+        text-align: center;
+        padding: 20px 10px;
+        border-radius: 70px;
+        flex-shrink: 0;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .s11-button2 {
+        border-bottom: 2px solid black;
+        width: 170px;
+        margin: 15px 0px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .s11b3 {
+        margin-top: 50px;
+        justify-content: space-between;
+        width: 450px;
+        display: flex;
+      }
+      .s11-block2 {
+        margin-top: 200px;
+        margin-right: 200px;
+        width: 500px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px rgb(189, 189, 189);
+        height: 500px;
+        flex-shrink: 0;
+      }
+      .s11-block2-m {
+        display: none;
+      }
+      .mmm {
+        display: none;
+      }
+      .s12 {
+        margin-top: 200px;
+      }
+      .s12-button {
+        margin-left: 150px;
+        background: #000;
+        width: 100px;
+        text-align: center;
+        padding: 20px 10px;
+        border-radius: 70px;
+        flex-shrink: 0;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .s12-button2 {
+        border-bottom: 2px solid black;
+        width: 70px;
+
+        margin: 15px 0px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-left: 40px;
+      }
+      .s12-b {
+        display: flex;
+        width: 800px;
+        margin-left: 450px;
+        flex-wrap: wrap;
+      }
+      .s12-bb {
+        margin: auto;
+        margin-top: 50px;
+        width: 379px;
+        height: 59px;
+        flex-shrink: 0;
+        background: #efefef;
+        border-radius: 10px;
+      }
+      .s12-bbb {
+        margin: auto;
+        margin-top: 100px;
+        width: 788px;
+        height: 230px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #efefef;
+      }
+      .s12-fut {
+        margin-left: 450px;
+        margin-top: 100px;
+      }
+      .fff-m{
+        display: none;
+      }
+
+      @media screen and (max-width: 400px) {
+        .navbar-m {
+          background-color: #fff;
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 9vh;
+          display: block;
+        }
+        .navbar {
+          display: none;
+          z-index: 10;
+        }
+        .nav-m {
+          z-index: 10;
+          display: flex;
+          padding: 10px 0px;
+        }
+        #s1-m {
+          display: block;
+        }
+        #s1 {
+          display: none;
+        }
+        .s1-block-m {
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          margin-top: 80px;
+          height: 780px;
+          background-image: url(./img/Rectangle\ 151.png);
+          display: flex;
+        }
+        .s1-text-m {
+          width: 300px;
+          text-align: center;
+          padding-top: 200px;
+          margin-left: 50px;
+        }
+        .pa2 {
+          display: flex;
+          justify-content: space-around;
+          width: 200px;
+          padding: 20px 0px;
+          border: 1px solid black;
+          border-radius: 5px;
+        }
+        .s2-text-1 {
+          color: #212121;
+          text-align: center;
+          font-size: 26px;
+          width: 280px;
+          font-style: normal;
+          font-weight: 550;
+          line-height: 120%; /* 31.2px */
+          margin: auto;
+        }
+        .s2-text-2 {
+          color: #212121;
+          text-align: center;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%; /* 26px */
+          width: 310px;
+          margin: auto;
+          margin-top: 30px;
+        }
+        .s2 {
+          margin-top: 200px;
+          margin-bottom: 200px;
+          padding: 0px 0px;
+        }
+        #p21,
+        #p22 {
+          display: none;
+        }
+        .s2-header {
+          margin-top: 50px;
+          display: flex;
+          text-align: center;
+          justify-content: space-between;
+
+          border-bottom: 3px solid rgb(200, 200, 200);
+        }
+        .s2-block-1 {
+          border-radius: 20px;
+          margin-top: 50px;
+          width: 105px;
+          padding: 50px 35px;
+          background-color: #f0f0f0;
+        }
+        .s2-block {
+          padding: 0px 10px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        .s2-block-1:hover {
+          border-radius: 20px;
+          margin-top: 50px;
+          width: 100%;
+          padding: 50px 40px;
+          background-color: #ffffff;
+          border: 1px solid black;
+          text-decoration: none;
+        }
+        .s2-img:hover {
+          margin-left: 80px;
+        }
+        .s3-text-1 {
+          margin: auto;
+          width: 300px;
+          color: #212121;
+          text-align: center;
+          font-size: 26px;
+          font-style: normal;
+          font-weight: 550;
+          line-height: 120%; /* 31.2px */
+        }
+        .s3-text-11 {
+          margin: auto;
+          width: 300px;
+        }
+        .s3-text-2 {
+          display: none;
+        }
+        .s4 {
+          background-color: white;
+          width: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .s4img {
+          background-color: white;
+          padding-bottom: 0px;
+          width: 100%;
+        }
+        .s4p {
+          background-image: url(./img/Rectangle\ 79.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .s4-text {
+          width: 229px;
+          color: #212121;
+          text-align: center;
+          font-size: 18px;
+          margin: auto;
+          margin-top: 30px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 180%; /* 19.2px */
+          padding-bottom: 30px;
+        }
+        .f31 {
+          display: none;
+        }
+        .s5-b {
+          display: flex;
+          margin: auto;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 330px;
+        }
+        .s5-block {
+          border-radius: 30px;
+          padding: 20px 10px;
+          margin-top: 10px;
+          background-color: #f0f0f0;
+          width: 300px;
+        }
+        .s5-h2 {
+          margin-top: 30px;
+          text-align: center;
+          color: #212121;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          margin-bottom: 50px;
+          line-height: 120%; /* 24px */
+        }
+        .s6-block {
+          margin: auto;
+          width: 80%;
+          padding: 30px 0px;
+          flex-shrink: 0;
+          border-radius: 10px;
+          background: #f0f0f0;
+          margin-top: 100px;
+        }
+        .time {
+          width: 100%;
+          height: 130px;
+          flex-shrink: 0;
+        }
+        .pppp {
+          text-align: center;
+        }
+        .s6-b {
+          margin: auto;
+          border-radius: 10px;
+          background: #212121;
+          box-shadow: 3px 10px 20px 0px rgba(0, 0, 0, 0.25);
+          flex-shrink: 0;
+          display: flex;
+          justify-content: space-evenly;
+          width: 390px;
+          height: 120px;
+          margin-left: -35px;
+        }
+        .s6s2 {
+          margin-left: 40px;
+        }
+        .s6s1 {
+          margin-left: 20px;
+        }
+        .s6-b2 {
+          margin: auto;
+          position: relative;
+          margin: 30px 0px;
+          padding: 30px 0px;
+          width: 280px;
+          background-color: #212121;
+          color: white;
+          text-align: center;
+          border-radius: 50px;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          left: 20px;
+        }
+        .s7-b {
+          margin-top: 50px;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 350px;
+        }
+        .s7-block-b {
+          border: none;
+          padding: 0px;
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+        .s7-block {
+          margin-top: 0px;
+        }
+        .s7-p2 {
+          margin-bottom: 30px;
+        }
+        .s7-button {
+          margin: auto;
+          margin-top: 20px;
+        }
+        .s8-block-m {
+          margin-top: 50px;
+          width: 900%;
+          display: block;
+          text-align: center;
+          border-radius: 20px;
+          border: 1px solid black;
+        }
+        .s8-block {
+          display: none;
+        }
+        .s8-img-m {
+          display: block;
+        }
+        .s8-img {
+          display: none;
+        }
+        .s9-block1 {
+          opacity: 90%;
+          padding: 30px;
+          margin-top: 100px;
+          width: 320px;
+          height: 500px;
+          border-radius: 10px;
+          background-image: url(./img/загружено\ 1.png);
+          background-color: #21212199;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .s9-block2 {
+          display: none;
+        }
+        .s9-b {
+          margin-left: 8px;
+        }
+        .k3 {
+          display: none;
+        }
+        .k2,
+        .k1 {
+          width: 300px;
+        }
+        .s9-block2-m {
+          width: 320px;
+          display: block;
+          padding: 50px 30px;
+          border: 1px solid black;
+        }
+        .s10-p1 {
+          text-align: center;
+          margin: auto;
+          margin-top: 100px;
+          color: #000;
+          width: 350px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%; /* 20.8px */
+        }
+        .s10-p2 {
+          text-align: center;
+          margin: auto;
+          margin-top: 20px;
+          color: #000;
+          width: 370px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%; /* 20.8px */
+        }
+        .s11 {
+          display: none;
+        }
+        .s11-block2-m {
+          border-radius: 10px;
+          width: 320px;
+          display: block;
+          padding: 50px 30px;
+          margin-left: 7px;
+          border: 1px solid black;
+        }
+        .mmm {
+          display: block;
+        }
+        .s12-bbb {
+          width: 300px;
+        }
+        .s12-b {
+          margin-left: 0px;
+          flex-wrap: wrap;
+          width: 300px;
+        }
+        .s12-bb {
+          width: 300px;
+          margin: auto;
+          margin-top: 50px;
+          height: 60px;
+          margin-left: 50px;
+          flex-shrink: 0;
+          background: #efefef;
+          border-radius: 10px;
+        }
+        .s12-fut {
+        margin-left: 5px;
+        margin-top: 100px;
+      }
+      .s12-button {
+        margin-top: 50px;
+        margin-left: 80px;
+        background: #000;
+        width: 100px;
+        text-align: center;
+        padding: 20px 10px;
+        border-radius: 70px;
+        flex-shrink: 0;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .s12-button2 {
+ 
+        border-bottom: 2px solid black;
+        width: 70px;
+
+        margin: 20px 0px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-left: 40px;
+        margin-top: 50px;
+      }
+      .fut{
+        display: none;
+
+      }
+      .fff-m{
+        display: block;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav">
+        <p class="hp1">О платформе</p>
+        <p class="hp1">Контакты</p>
+        <p class="hp1">+992-88-898-8897</p>
+        <img
+          src="./img/samsung_logo_PNG6 1.png"
+          alt=""
+          style="padding: 0px 100px"
+        />
+        <p
+          style="
+            width: 400px;
+            background: #fff;
+            height: 4vh;
+            border-radius: 70px;
+            padding-left: 30px;
+            border: 1px solid black;
+          "
+        >
+          Ваш город
+          <img
+            src="./img/arrow.svg"
+            alt=""
+            style="position: relative; left: 270px"
+          />
+        </p>
+      </div>
+    </header>
+    <header class="navbar-m">
+      <div class="nav-m">
+        <img
+          src="./img/samsung_logo_PNG6 1 (2).png"
+          alt=""
+          style="padding: 0px 40px"
+        />
+        <p
+          style="
+            padding-top: 10px;
+            margin-top: 15px;
+            width: 200px;
+            background: #fff;
+            height: 4vh;
+            border-radius: 70px;
+            padding-left: 30px;
+            border: 1px solid black;
+          "
+        >
+          Ваш город
+          <img
+            src="./img/arrow.svg"
+            alt=""
+            style="position: relative; left: 70px"
+          />
+        </p>
+      </div>
+    </header>
+    <main>
+      <section id="s1">
+        <div class="s1-block">
+          <img
+            src="./img/назад.svg"
+            alt=""
+            style="
+              height: 50px;
+              width: 50px;
+              position: relative;
+              top: 350px;
+              left: 200px;
+            "
+          />
+          <div class="s1-text">
+            <p
+              style="
+                color: #ffffff;
+                font-size: 36px;
+                font-weight: 550;
+                line-height: 120%;
+              "
+            >
+              Сервисный центр Samsung в Киеве
+            </p>
+            <p
+              style="
+                width: 430px;
+                padding-top: 50px;
+                color: #fff;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; /* 26px */
+              "
+            >
+              Ремонт и обслуживание техники от мастеров с 10-летним опытом
+            </p>
+            <div
+              class="s1-b"
+              style="
+                display: flex;
+                justify-content: space-between;
+                width: 500px;
+                margin-top: 50px;
+              "
+            >
+              <p
+                style="
+                  width: 180px;
+                  border-radius: 50px;
+                  padding: 20px 0px;
+                  text-align: center;
+                  background-color: #fff;
+                  color: #212121;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                "
+              >
+                ВЫБРАТЬ МАСТЕРА
+              </p>
+              <p
+                style="
+                  margin: 10px 0px;
+                  padding-bottom: px;
+                  width: 225px;
+                  border-bottom: 1px solid white;
+                  color: #fff;
+                  font-size: 14px;
+                  font-weight: 550;
+                "
+              >
+                ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
+              </p>
+            </div>
+          </div>
+          <img
+            src="./img/вперед.svg"
+            alt=""
+            style="
+              height: 50px;
+              width: 50px;
+              position: relative;
+              top: 350px;
+              right: -450px;
+            "
+          />
+        </div>
+      </section>
+      <section id="s1-m">
+        <div class="s1-block-m">
+          <div class="s1-text-m">
+            <p
+              style="
+                color: #ffffff;
+                font-size: 36px;
+                font-weight: 550;
+                line-height: 120%;
+              "
+            >
+              Сервисный центр Samsung в Киеве
+            </p>
+            <p
+              style="
+                width: 300px;
+                padding-top: 50px;
+                color: #fff;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; /* 26px */
+              "
+            >
+              Ремонт и обслуживание техники от мастеров с 10-летним опытом
+            </p>
+
+            <p
+              style="
+                margin-left: 70px;
+                margin-top: 50px;
+                width: 180px;
+                border-radius: 50px;
+                padding: 20px 0px;
+                text-align: center;
+                background-color: #fff;
+                color: #212121;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              "
+            >
+              ВЫБРАТЬ МАСТЕРА
+            </p>
+            <p
+              style="
+                margin: 30px 0px;
+                padding-bottom: 8px;
+                border-bottom: 1px solid white;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 550;
+              "
+            >
+              ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
+            </p>
+            <img src="./img/кнопки (2).svg" alt="" style="margin-top: 60px" />
+          </div>
+        </div>
+      </section>
+      <div
+        class="a1"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 30px;
+          justify-content: center;
+          gap: 50px;
+        "
+      >
+        <div class="pa2">
+          <img src="./img/Frame 28.svg" alt="" />
+          <p class="pa1">Бесплатная диагностика</p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
+            padding: 20px 0px;
+            border: 1px solid black;
+            border-radius: 5px;
+          "
+        >
+          <img src="./img/Frame 29.svg" alt="" />
+          <p
+            style="
+              color: #212121;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 130%; /* 20.8px */
+              width: 125px;
+            "
+          >
+            Выезд мастера в течение 1 часа
+          </p>
+        </div>
+        <div class="pa2">
+          <img src="./img/Frame 30.svg" alt="" />
+          <p class="pa1">Ремонт за 1 день</p>
+        </div>
+      </div>
+      <section id="s2">
+        <div class="s2">
+          <p class="s2-text-1">
+            Мы осуществляем ремонт техники Samsung всех видов
+          </p>
+          <p class="s2-text-2">
+            Чтобы ни произошло с Вашей техникой мы всегда постараемся найти
+            самое оптимальное решение для восстановления её работоспособности и
+            внешнего вида, обслужим и осуществим настройку
+          </p>
+          <div class="s2-header">
+            <p class="s2-header-p1">Бытовая техника</p>
+            <p class="s2-header-p2">Цифровая техника</p>
+            <p class="s2-header-p2" id="p21">Компьютерная техника</p>
+            <p class="s2-header-p2" id="p22">ТВ и Аудио</p>
+          </div>
+          <div class="s2-block">
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/palisos.svg"
+                alt=""
+              />
+              <p>Пылесос</p>
+            </div>
+            <div class="s2-block-1">
+              <img class="s2-img" sr data-aos="flip-left" src="./img/sect-2,sect-3/utug.svg" alt="" />
+              <p>Парогенератор</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/utug-monak.svg"
+                alt=""
+              />
+              <p>Гладильна система</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/moshinka safed.svg"
+                alt=""
+              />
+              <p>Стиральная машина</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/moshnka siyoh.svg"
+                alt=""
+              />
+              <p>Сушильная машина</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/pasuda moyka.svg"
+                alt=""
+              />
+              <p>Посудомоечная машина</p>
+            </div>
+          </div>
+          <div class="s2-block">
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/xaladelnik.svg"
+                alt=""
+              />
+              <p>Холодильник</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/duhopka.svg"
+                alt=""
+              />
+              <p>
+                Духовой <br />
+                шкаф
+              </p>
+            </div>
+            <div class="s2-block-1">
+              <img class="s2-img" sr data-aos="flip-left" src="./img/sect-2,sect-3/pilta.svg" alt="" />
+              <p>Варочная панель</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/vitichka.svg"
+                alt=""
+              />
+              <p>Кухонная вытяжка</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/mikrovalnovka.svg"
+                alt=""
+              />
+              <p>Микроволновая печь</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/kansaner.svg"
+                alt=""
+              />
+              <p>Кондиционер</p>
+            </div>
+          </div>
+          <div class="s2-fut">
+            <p
+              style="
+                margin-top: 30px;
+                color: #212121;
+                text-align: center;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; /* 33.8px */
+              "
+            >
+              Не нашли свой вид техники?
+            </p>
+            <p
+              style="
+                margin-top: 30px;
+                color: #212121;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; /* 20.8px */
+              "
+            >
+              Наши специалисты бесплатно вас проконсультируют и ответят на все
+              вопросы по телефону 88008008000 или Вы можете оставить заявку и
+              наш специалист свяжется с Вами в течение 1 часа
+            </p>
+            <p
+              style="
+                margin: auto;
+                margin-top: 50px;
+                color: #fff;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                background-color: black;
+                width: 180px;
+                text-align: center;
+                padding: 25px 0px;
+                border-radius: 50px;
+              "
+            >
+              ОСТАВИТЬ ЗАЯВКУ
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="s3">
+        <div class="s2">
+          <p class="s3-text-1">
+            Ответьте на 3 вопроса и получите подарок от нашего сервисного центра
+          </p>
+          <p
+            class="s3-text-11"
+            style="
+              margin-top: 30px;
+              padding-bottom: 30px;
+              color: #000000;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 130%; /* 26px */
+            "
+          >
+            01
+            <img
+              src="./img/Rectangle 133.svg"
+              alt=""
+              style="margin-bottom: 5px"
+            />
+            <span
+              style="
+                letter-spacing: 5px;
+                margin-left: 10px;
+                color: #7a7a7a;
+                text-align: center;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; /* 26px */
+              "
+              >02 03 04</span
+            >
+          </p>
+          <p class="s3-text-2">1.Выберите ваш вид техники</p>
+          <div class="s2-header">
+            <p class="s2-header-p1">Бытовая техника</p>
+            <p class="s2-header-p2">Цифровая техника</p>
+            <p class="s2-header-p2" id="p21">Компьютерная техника</p>
+            <p class="s2-header-p2" id="p22">ТВ и Аудио</p>
+          </div>
+          <div class="s2-block">
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/palisos.svg"
+                alt=""
+              />
+              <p>Пылесос</p>
+            </div>
+            <div class="s2-block-1">
+              <img class="s2-img" sr data-aos="flip-left" src="./img/sect-2,sect-3/utug.svg" alt="" />
+              <p>Парогенератор</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/utug-monak.svg"
+                alt=""
+              />
+              <p>Гладильна система</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/moshinka safed.svg"
+                alt=""
+              />
+              <p>Стиральная машина</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/moshnka siyoh.svg"
+                alt=""
+              />
+              <p>Сушильная машина</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/pasuda moyka.svg"
+                alt=""
+              />
+              <p>Посудомоечная машина</p>
+            </div>
+          </div>
+          <div class="s2-block">
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/xaladelnik.svg"
+                alt=""
+              />
+              <p>Холодильник</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/duhopka.svg"
+                alt=""
+              />
+              <p>
+                Духовой <br />
+                шкаф
+              </p>
+            </div>
+            <div class="s2-block-1">
+              <img class="s2-img" sr data-aos="flip-left" src="./img/sect-2,sect-3/pilta.svg" alt="" />
+              <p>Варочная панель</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/vitichka.svg"
+                alt=""
+              />
+              <p>Кухонная вытяжка</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/mikrovalnovka.svg"
+                alt=""
+              />
+              <p>Микроволновая печь</p>
+            </div>
+            <div class="s2-block-1">
+              <img data-aos="flip-left"
+                class="s2-img"
+                src="./img/sect-2,sect-3/kansaner.svg"
+                alt=""
+              />
+              <p>Кондиционер</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="s4">
+        <div class="s4">
+          <img
+            src="./img/курьер.png"
+            alt=""
+            class="s4img"
+            style="margin-top: -110px"
+          />
+          <div class="s4p" style="width: 800px">
+            <p
+              style="
+                color: #212121;
+                text-align: center;
+                margin: auto;
+                width: 325px;
+                font-size: 36px;
+                font-style: normal;
+                margin-top: 50px;
+                font-weight: 550;
+
+                line-height: 110%; /* 39.6px */
+              "
+            >
+              Мы дорожим вашим временем!
+            </p>
+            <p class="s4-text">
+              Вам не нужно никуда ехать Мы сделаем все за вас 5 курьеров готовы
+              к выезду прямо сейчас!
+              <img
+                src="./img/Frame 31.svg"
+                alt=""
+                class="f31"
+                style="margin-bottom: -5px"
+              />
+            </p>
+            <p
+              style="
+                color: #fff;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                border-radius: 100px;
+                background: #212121;
+                width: 180px;
+                text-align: center;
+                padding: 20px 0px;
+                margin: auto;
+              "
+            >
+              ВЫЗВАТЬ КУРЬЕРА
+            </p>
+            <p
+              style="
+                color: #212121;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%; /* 19.2px */
+                margin-top: 50px;
+              "
+            >
+              Услуга предоставляется бесплатно!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="s5">
+        <div class="s5">
+          <p class="s5-h1">
+            Ремонт может быть не только качественным, но и комфортным
+          </p>
+          <p class="s5-h2">4 наших главных преимущества</p>
+          <div class="s5-b">
+            <div class="s5-block">
+              <p class="s5-block-text1">01</p>
+              <p class="s5-block-text2">9 из 10 продуктов мы чиним за 1 день</p>
+              <div class="line1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="199"
+                  height="3"
+                  viewBox="0 0 199 3"
+                  fill="none"
+                >
+                  <rect width="199" height="3" fill="white" />
+                  <rect width="49" height="3" fill="#212121" />
+                </svg>
+              </div>
+              <img src="./img/Rectangle 112.png" alt="" class="s5-img" />
+            </div>
+            <div class="s5-block">
+              <p class="s5-block-text1">02</p>
+              <p class="s5-block-text2">
+                После ремонта техника проходит контроль качества по 26 пунктам
+              </p>
+              <div class="line2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="199"
+                  height="3"
+                  viewBox="0 0 199 3"
+                  fill="none"
+                >
+                  <rect width="199" height="3" fill="white" />
+                  <rect width="100" height="3" fill="#212121" />
+                </svg>
+              </div>
+              <img src="./img/Rectangle 113.png" alt="" class="s5-img" />
+            </div>
+            <div class="s5-block">
+              <p class="s5-block-text1">03</p>
+              <p class="s5-block-text2">
+                Диагностика 0 грн, даже в случае отказа от ремонта
+              </p>
+              <div class="line1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="199"
+                  height="3"
+                  viewBox="0 0 199 3"
+                  fill="none"
+                >
+                  <rect width="199" height="3" fill="white" />
+                  <rect width="147" height="3" fill="#212121" />
+                </svg>
+              </div>
+              <img src="./img/Rectangle 114.png" alt="" class="s5-img" />
+            </div>
+            <div class="s5-block">
+              <p class="s5-block-text1">04</p>
+              <p class="s5-block-text2">
+                Наш менеджер будет держать вас в курсе всех этапов работы
+              </p>
+              <div class="line1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="199"
+                  height="3"
+                  viewBox="0 0 199 3"
+                  fill="none"
+                >
+                  <rect width="199" height="3" fill="#F0F0F0" />
+                  <rect width="199" height="3" fill="#212121" />
+                </svg>
+              </div>
+              <img src="./img/Rectangle 115.png" alt="" class="s5-img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="s6">
+        <div class="s6">
+          <p
+            style="
+              color: #212121;
+              text-align: center;
+              font-size: 36px;
+              font-style: normal;
+              font-weight: 550;
+              line-height: 130%; /* 46.8px */
+            "
+          >
+            Оставьте заявку в течение 1часа и получите СКИДКУ 15%
+          </p>
+          <div class="s6-block">
+            <p
+              class="pppp"
+              style="
+                margin-bottom: 40px;
+                padding-left: 50px;
+                color: #212121;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              "
+            >
+              До конца акции осталось
+            </p>
+            <div class="s6flex">
+              <div class="s6-b">
+                <p>
+                  <span class="s6s1">00</span>
+                  <span class="s6s2">часов</span>
+                </p>
+                <p>
+                  <span class="s6s1">59</span>
+                  <span class="s6s2">минут</span>
+                </p>
+                <p>
+                  <span class="s6s1">55</span>
+                  <span class="s6s2">секунд</span>
+                </p>
+              </div>
+              <div class="s6-b2"><p>ПОЛУЧИТЬ СКИДКУ</p></div>
+            </div>
+          </div>
+          <img
+            src="./img/Слой 1 2.svg"
+            alt=""
+            class="time"
+            style="margin-top: 100px"
+          />
+        </div>
+      </section>
+      <section id="s7">
+        <div class="s7">
+          <p class="s7-p1">Сколько стоит ремонт Samsung:</p>
+          <p class="s7-p2">Гарантируем лучшую цену в городе!</p>
+          <div class="s7-b">
+            <div class="s7-block">
+              <p>
+                <span class="s7s1">Ремонт пылесоса</span
+                ><span class="s7s2" style="margin-left: 50px">от N s</span>
+              </p>
+              <p>
+                <span class="s7s1">Ремонт кофеварки</span
+                ><span class="s7s2" style="margin-left: 40px">от N s</span>
+              </p>
+              <p>
+                <span class="s7s1">Ремонт мультиварки</span
+                ><span class="s7s2" style="margin-left: 25px">от N s</span>
+              </p>
+              <p>
+                <span class="s7s1">Ремонт утюга</span
+                ><span class="s7s2" style="margin-left: 90px">от N s</span>
+              </p>
+            </div>
+            <div class="s7-block-b">
+              <p>
+                <span class="s7s1">Ремонт отпаривателя</span
+                ><span class="s7s2" style="margin-left: 40px">от N s</span>
+              </p>
+              <p>
+                <span class="s7s1">Ремонт гриля</span
+                ><span class="s7s2" style="margin-left: 115px">от N s</span>
+              </p>
+              <p>
+                <span class="s7s1">Ремонт чайника</span
+                ><span class="s7s2" style="margin-left: 95px">от N s</span>
+              </p>
+              <p>
+                <span class="s7s1">Ремонт увлажнителя</span
+                ><span class="s7s2" style="margin-left: 50px">от N s</span>
+              </p>
+            </div>
+            <div class="s7-block">
+              <p>
+                <span class="s7s1">Ремонт тостера</span
+                ><span class="s7s2" style="margin-left: 85px">от N s</span>
+              </p>
+              <p>
+                <span class="s7s1">Ремонт фритюрницы</span
+                ><span class="s7s2" style="margin-left: 40px">от N s</span>
+              </p>
+              <p>
+                <span class="s7s1">Ремонт блинницы</span
+                ><span class="s7s2" style="margin-left: 70px">от N s</span>
+              </p>
+              <p>
+                <span class="s7s1">Ремонт обогревателя</span
+                ><span class="s7s2" style="margin-left: 40px">от N s</span>
+              </p>
+            </div>
+            <p
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto;
+                margin-top: 100px;
+                text-align: center;
+                color: #212121;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%; /* 19.2px */
+              "
+            >
+              Не нашли цену на ремонт своего устройства?
+              <span class="s7-button">ПОСМОТРЕТЬ ПРАЙС</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="s8">
+        <div class="s8">
+          <p class="s8-h">Мы подобрали лучших мастеров:</p>
+          <div class="s8-b">
+            <div class="s8-block">
+              <img src="./img/Rectangle 66.png" alt="" />
+              <div>
+                <p
+                  style="
+                    color: #212121;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 550;
+                    line-height: 120%; /* 24px */
+                  "
+                >
+                  Антон Грисевич
+                </p>
+                <p
+                  style="
+                    color: #212121;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 220%; /* 19.2px */
+                  "
+                >
+                  Мастер по ремонту бытовой техники <br />
+                  Стаж работы: <b>7 лет</b>
+                </p>
+                <h3 style="border: none">
+                  <img
+                    src="./img/звездочки (4).svg"
+                    alt=""
+                    style="padding: 0px 10px"
+                  />
+                  4,6
+                  <span style="font-size: 54px; padding-top: -15px">.</span> 24
+                  оценки
+                </h3>
+              </div>
+            </div>
+            <div class="s8-block">
+              <img src="./img/Rectangle 66 (1).png" alt="" />
+              <div>
+                <p
+                  style="
+                    color: #212121;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 550;
+                    line-height: 120%; /* 24px */
+                  "
+                >
+                  Павел Матухно
+                </p>
+                <p
+                  style="
+                    color: #212121;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 220%; /* 19.2px */
+                  "
+                >
+                  Мастер по ремонту стиральных машин<br />
+                  Стаж работы: <b>3 года</b>
+                </p>
+                <h3 style="border: none">
+                  <img
+                    src="./img/звездочки (4).svg"
+                    alt=""
+                    style="padding: 0px 10px"
+                  />
+                  5,0
+                  <span style="font-size: 54px; padding-top: -15px">.</span> 15
+                  оценки
+                </h3>
+              </div>
+            </div>
+            <div class="s8-block-m">
+              <img
+                src="./img/Rectangle 66.png"
+                alt=""
+                style="
+                  width: 100%;
+                  border-radius: 20px 20px 0px 0px;
+                  background: #e8e7e7;
+                  border-bottom: 1px solid black;
+                "
+              />
+              <div>
+                <p
+                  style="
+                    color: #212121;
+                    font-size: 20px;
+                    font-style: normal;
+                    padding: 10px 0px;
+                    font-weight: 550;
+                    border-bottom: 1px solid black;
+                    line-height: 120%; /* 24px */
+                  "
+                >
+                  Антон Грисевич
+                </p>
+                <p
+                  style="
+                    margin-top: 20px;
+                    color: #212121;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%; /* 19.2px */
+                  "
+                >
+                  Мастер по ремонту <br />
+                  бытовой техники <br />
+                  <span style="margin-top: 10px"
+                    >Стаж работы: <b>7 лет</b></span
+                  >
+                </p>
+                <h3 style="border: none">
+                  4,6
+                  <span style="font-size: 54px; padding-top: -15px">.</span> 24
+                  оценки
+                </h3>
+                <img
+                  src="./img/звездочки (4).svg"
+                  alt=""
+                  style="padding: 20px 0px; margin-left: 30px"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="s8-img" style="flex-wrap: wrap">
+            <img src="./img/пагинация.png" alt="" style="margin-left: 770px" />
+            <img
+              src="./img/кнопки.svg"
+              alt=""
+              style="margin-left: 400px; margin-top: 150px"
+            />
+          </div>
+          <div class="s8-img-m" style="flex-wrap: wrap">
+            <img
+              src="./img/кнопки.svg"
+              alt=""
+              style="margin-left: 120px; margin-top: 50px"
+            />
+            <img
+              src="./img/пагинация.png"
+              alt=""
+              style="width: 250px; margin-left: 80px; margin-top: 50px"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="s9">
+        <div class="s9">
+          <p class="s8-h">Истории последних обращений в наш сервис</p>
+          <div class="s9-b">
+            <img
+              src="./img/кнопки (3).svg"
+              alt=""
+              style="margin-right: 50px"
+              class="k3"
+            />
+            <div class="s9-block1">
+              <p class="k2">Смартфон Galaxy <span>Note20 Ultra</span></p>
+              <p>
+                Проблема: <br /><span
+                  >Повреждение экрана (трещины на дисплее и тачскрине)</span
+                >
+              </p>
+              <p>Решение: <br /><span>Замена экрана</span></p>
+              <p class="k1">
+                Срок гарантии: <span>1 месяц</span
+                ><b style="margin-left: 100px" class="k3">Стоимость работы:</b
+                ><span class="k3">100 грн</span>
+              </p>
+              <p>Мастер: <span>Геннадий Левченко</span></p>
+            </div>
+            <div class="s9-block2">
+              <div class="bb1" style="display: flex">
+                <img src="./img/Ellipse 31.svg" alt="" />
+                <div style="margin-left: 50px">
+                  <p style="padding: 10px 0px"><b>Иван Красов</b></p>
+                  <p
+                    style="
+                      padding: 10px 0px;
+                      border-bottom: 2px solid gray;
+                      width: 240px;
+                    "
+                  >
+                    Клиент сервисного центра <br />
+                    <b>Samsung</b>
+                  </p>
+                  <p style="padding: 10px 0px">
+                    <span>Мастер </span><b>Николай Филатов</b>
+                  </p>
+                </div>
+              </div>
+              <p
+                style="
+                  margin-top: 60px;
+                  text-align: justify;
+                  color: #212121;
+                  width: 400px;
+                  height: 130px;
+                  flex-shrink: 0;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 130%; /* 18.2px */
+                "
+              >
+                Я отдавал в ремонт телефон Samsung. До этого сервиса обратилась
+                в другой, а там запчасти для моей модели закончились. Я позвонил
+                сюда, уточнил, попросил, чтобы за сутки все точно сделали. Мне
+                пообещали, что успеют, и не обманули – на следующий день ближе к
+                вечеру телефон был готов. Дали гарантию, так что если будут
+                какие-то проблемы, обращусь к ним же.
+              </p>
+              <p
+                style="
+                  color: #7a7a7a;
+                  margin-top: 50px;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 550;
+                  line-height: 120%; /* 16.8px */
+                "
+              >
+                19.12.2020
+                <img
+                  src="./img/звездочки (3).svg"
+                  alt=""
+                  style="margin-left: 200px"
+                />
+              </p>
+            </div>
+            <div class="s9-block2-m">
+              <div>
+                <p style="border-bottom: 1px solid black; padding-bottom: 50px">
+                  Я отдавал в ремонт телефон Samsung. До этого сервиса
+                  обратилась в другой, а там запчасти для моей модели
+                  закончились. Я позвонил сюда, уточнил, попросил, чтобы за
+                  сутки все точно сделали. Мне пообещали, что успеют, и не
+                  обманули – на следующий день ближе к вечеру телефон был готов.
+                  Дали гарантию, так что если будут какие-то проблемы, обращусь
+                  к ним же.
+                </p>
+                <img
+                  src="./img/Ellipse 31.svg"
+                  alt=""
+                  style="margin-left: 110px; margin-top: -50px"
+                />
+                <div>
+                  <p style="padding: 10px 0px; text-align: center">
+                    <b>Иван Красов</b>
+                  </p>
+                  <p
+                    style="
+                      padding: 10px 0px;
+                      text-align: center;
+                      width: 240px;
+                      margin-left: 40px;
+                    "
+                  >
+                    Клиент сервисного центра <br />
+                    <b>Samsung</b>
+                  </p>
+                  <p style="padding: 10px 0px; text-align: center">
+                    <span>Мастер <br /></span><b>Николай Филатов</b>
+                  </p>
+                  <p
+                    style="
+                      color: #7a7a7a;
+                      margin-top: 30px;
+                      font-size: 14px;
+                      font-style: normal;
+                      font-weight: 550;
+                    "
+                  >
+                    19.12.2020
+                    <img
+                      src="./img/звездочки (3).svg"
+                      alt=""
+                      style="margin-left: 200px; position: relative; top: -15px"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="s8-img-m" style="flex-wrap: wrap">
+              <img
+                src="./img/кнопки.svg"
+                alt=""
+                style="margin-left: 120px; margin-top: 50px"
+              />
+              <img
+                src="./img/кнопки (1).svg"
+                alt=""
+                style="margin-left: 50px"
+                class="k3"
+              />
+            </div>
+            <img
+              src="./img/пагинация.png"
+              alt=""
+              style="margin-left: 530px; margin-top: 150px"
+              class="k3"
+            />
+            <div class="s8-img-m" style="flex-wrap: wrap">
+              <img
+                src="./img/пагинация.png"
+                alt=""
+                style="width: 250px; margin-left: 80px; margin-top: 50px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="s10">
+        <div class="s10">
+          <p
+            style="
+              color: #000;
+              font-size: 36px;
+              text-align: center;
+              font-style: normal;
+              font-weight: 550;
+              line-height: 120%; /* 43.2px */
+            "
+          >
+            Lorem ipsum
+          </p>
+          <p class="s10-p1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p class="s10-p2">
+            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam eaque ipsa,
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas
+            sit, aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos, qui ratione voluptatem sequi nesciunt, neque porro
+            quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur
+            adipisci[ng] velit, sed quia non numquam [do] eius modi tempora
+            inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+            autem vel eum iure reprehenderit, qui in ea voluptate velit esse,
+            quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat,
+            quo voluptas nulla pariatur?
+          </p>
+        </div>
+      </section>
+      <section id="s11">
+        <div class="s11">
+          <div class="s11-b">
+            <div class="s11-block1">
+              <h1 class="s11-ot">Отзывы</h1>
+              <div class="s11b">
+                <div class="s11b1">
+                  <p
+                    style="
+                      color: #212121;
+                      font-size: 64px;
+                      font-style: normal;
+                      font-weight: 550;
+                      line-height: 120%; /* 76.8px */
+                    "
+                  >
+                    4.8
+                  </p>
+                  <p
+                    style="
+                      margin-top: 20px;
+                      color: #717171;
+                      font-size: 20px;
+                      font-style: normal;
+                      font-weight: 300;
+                      line-height: 130%; /* 26px */
+                    "
+                  >
+                    На основании 27 отзывов
+                  </p>
+                  <p style="margin-top: 100px">
+                    <img src="./img/звездочки (1).svg" alt="" />
+                  </p>
+                </div>
+                <div class="s11b2">
+                  <p>
+                    5
+                    <svg
+                      style="padding: 0px 3px; top: -4px; position: relative"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="150"
+                      height="4"
+                      viewBox="0 0 150 4"
+                      fill="none"
+                    >
+                      <rect width="150" height="4" fill="#EFEFEF" />
+                      <rect width="121.123" height="4" fill="#212121" />
+                    </svg>
+                    80%
+                  </p>
+                  <p>
+                    4
+                    <svg
+                      style="padding: 0px 3px; top: -4px; position: relative"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="150"
+                      height="4"
+                      viewBox="0 0 150 4"
+                      fill="none"
+                    >
+                      <rect width="150" height="4" fill="#EFEFEF" />
+                      <rect width="0" height="4" fill="#212121" />
+                    </svg>
+                    0%
+                  </p>
+                  <p>
+                    3
+                    <svg
+                      style="padding: 0px 3px; top: -4px; position: relative"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="150"
+                      height="4"
+                      viewBox="0 0 150 4"
+                      fill="none"
+                    >
+                      <rect width="150" height="4" fill="#EFEFEF" />
+                      <rect width="20" height="4" fill="#212121" />
+                    </svg>
+                    5%
+                  </p>
+                  <p>
+                    2
+                    <svg
+                      style="padding: 0px 3px; top: -4px; position: relative"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="150"
+                      height="4"
+                      viewBox="0 0 150 4"
+                      fill="none"
+                    >
+                      <rect width="150" height="4" fill="#EFEFEF" />
+                      <rect width="40" height="4" fill="#212121" />
+                    </svg>
+                    10%
+                  </p>
+                  <p>
+                    1
+                    <svg
+                      style="padding: 0px 3px; top: -4px; position: relative"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="150"
+                      height="4"
+                      viewBox="0 0 150 4"
+                      fill="none"
+                    >
+                      <rect width="150" height="4" fill="#EFEFEF" />
+                      <rect width="80" height="4" fill="#212121" />
+                    </svg>
+                    50%
+                  </p>
+                </div>
+              </div>
+              <div class="s11b3">
+                <p class="s11-button">ОСТАВИТЬ ОТЗЫВ</p>
+                <p class="s11-button2">ЧИТАТЬ ВСЕ ОТЗЫВЫ</p>
+              </div>
+            </div>
+            <div class="s11-block2">
+              <svg
+                style="position: relative; top: -15px; left: 20px"
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+              >
+                <path
+                  d="M27.529 16.8067C26.6396 16.7173 24.6828 16.7173 24.6828 15.4623C24.6828 13.7599 27.173 11.5193 31.1753 9.09934C32.4201 8.29251 35.0002 7.03813 35.0002 5.33506C35.0002 3.99072 34.0215 3.00509 31.976 3.27385C30.0192 3.5426 26.995 4.88695 22.9933 8.29251C18.8129 11.788 14.8999 17.6135 14.8999 23.3491C14.8999 29.1746 18.8129 35 25.128 35C30.1972 35 34.5555 31.1464 34.5555 25.8584C34.5549 21.8254 31.798 17.1654 27.529 16.8067Z"
+                  fill="#FF8522"
+                />
+                <path
+                  d="M15.0261 14.2861C14.2956 13.9014 13.4943 13.6496 12.6296 13.5772C11.7402 13.4878 9.78344 13.4878 9.78344 12.2329C9.78344 10.5304 12.2737 8.28978 16.276 5.86985C17.5214 5.06302 20.1003 3.80863 20.1003 2.10557C20.1003 0.761227 19.1216 -0.2244 17.0761 0.044356C15.1193 0.313112 12.0951 1.65746 8.09335 5.06302C3.9136 8.55854 0 14.384 0 20.1201C0 25.9456 3.91304 31.7711 10.2281 31.7711C11.7127 31.7711 13.1356 31.4384 14.4062 30.8381C13.1603 28.5681 12.496 25.9417 12.496 23.3492C12.4966 20.1479 13.5196 17.0433 15.0261 14.2861Z"
+                  fill="#FF8522"
+                />
+              </svg>
+              <p
+                style="
+                  width: 399px;
+                  height: 101px;
+                  margin: auto;
+                  flex-shrink: 0;
+                  color: #212121;
+                  text-align: center;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 130%; /* 20.8px */
+                "
+              >
+                Спасибо за спасённый ноутбук! Обратился за профессиональной
+                чисткой после разлитого на ноут чая, сделали быстро и
+                качественно, всё объяснили и рассказали, как действовать в таких
+                случаях. Очень рекомендую!
+              </p>
+              <img
+                src="./img/Ellipse 31 (1).svg"
+                alt=""
+                style="margin-top: 100px; margin-left: 200px"
+              />
+              <p
+                style="
+                  margin-top: 10px;
+                  color: #212121;
+                  text-align: center;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 130%; /* 20.8px */
+                "
+              >
+                Александр Меньшов
+              </p>
+              <p style="text-align: center; margin-top: 10px">
+                <span style="color: #6b6b6b">Клиент сервисного центра </span
+                ><b>Samsung</b>
+              </p>
+              <p style="text-align: center; margin-top: 10px">
+                <span style="color: #6b6b6b">Мастер</span>
+                <b>Николай Антоненко</b>
+              </p>
+              <p
+                style="
+                  margin-left: 20px;
+                  color: #7a7a7a;
+                  margin-top: 40px;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 550;
+                  line-height: 120%; /* 16.8px */
+                "
+              >
+                19.12.2020
+                <img
+                  src="./img/звездочки (3).svg"
+                  alt=""
+                  style="margin-left: 280px"
+                />
+              </p>
+            </div>
+          </div>
+          <img src="./img/пагинация.png" alt="" style="margin-left: 770px" />
+          <img
+            src="./img/кнопки.svg"
+            alt=""
+            style="margin-left: 400px; margin-top: 150px"
+          />
+        </div>
+        <div class="mmm">
+          <h1 class="s11-ot" style="text-align: center; margin-top: 150px">
+            Отзывы
+          </h1>
+          <div
+            style="
+              display: flex;
+              padding-left: 30px;
+              border: 1px solid black;
+              margin-bottom: 50px;
+              border-radius: 10px;
+            "
+          >
+            <p
+              style="
+                color: #212121;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 550;
+                line-height: 120%; /* 76.8px */
+              "
+            >
+              4.8
+            </p>
+            <p
+              style="
+                margin-left: 10px;
+                margin-top: 20px;
+                color: #717171;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 130%; /* 26px */
+              "
+            >
+              На основании 27 отзывов
+
+              <img src="./img/звездочки (1).svg" alt="" />
+            </p>
+          </div>
+        </div>
+        <div class="s11-block2-m">
+          <div>
+            <p style="border-bottom: 1px solid black; padding-bottom: 50px">
+              Я отдавал в ремонт телефон Samsung. До этого сервиса обратилась в
+              другой, а там запчасти для моей модели закончились. Я позвонил
+              сюда, уточнил, попросил, чтобы за сутки все точно сделали. Мне
+              пообещали, что успеют, и не обманули – на следующий день ближе к
+              вечеру телефон был готов. Дали гарантию, так что если будут
+              какие-то проблемы, обращусь к ним же.
+            </p>
+            <img
+              src="./img/Ellipse 31.svg"
+              alt=""
+              style="margin-left: 110px; margin-top: -50px"
+            />
+            <div>
+              <p style="padding: 10px 0px; text-align: center">
+                <b>Иван Красов</b>
+              </p>
+              <p
+                style="
+                  padding: 10px 0px;
+                  text-align: center;
+                  width: 240px;
+                  margin-left: 40px;
+                "
+              >
+                Клиент сервисного центра <br />
+                <b>Samsung</b>
+              </p>
+              <p style="padding: 10px 0px; text-align: center">
+                <span>Мастер <br /></span><b>Николай Филатов</b>
+              </p>
+              <p
+                style="
+                  color: #7a7a7a;
+                  margin-top: 30px;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 550;
+                "
+              >
+                19.12.2020
+                <img
+                  src="./img/звездочки (3).svg"
+                  alt=""
+                  style="margin-left: 200px; position: relative; top: -15px"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="s8-img-m" style="flex-wrap: wrap">
+          <img
+            src="./img/кнопки.svg"
+            alt=""
+            style="margin-left: 120px; margin-top: 50px"
+          />
+          <img
+            src="./img/пагинация.png"
+            alt=""
+            style="width: 250px; margin-left: 80px; margin-top: 50px"
+          />
+        </div>
+      </section>
+      <section id="s12">
+        <div class="s12">
+          <p
+            style="
+              text-align: center;
+              color: #212121;
+              font-size: 36px;
+              font-style: normal;
+              font-weight: 550;
+              line-height: 120%; /* 43.2px */
+            "
+          >
+            Мы будем рады вашему отзыву
+          </p>
+          <div class="s12-bbb">
+            <p style="margin: 30px; padding-top: 10px">Отзыв</p>
+          </div>
+          <div class="s12-b">
+            <div class="s12-bb">
+              <p
+                style="
+                  padding-top: 20px;
+                  padding-left: 20px;
+                  color: #7a7a7a;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 120%; /* 19.2px */
+                "
+              >
+                Ваше имя
+              </p>
+            </div>
+            <div class="s12-bb">
+              <p
+                style="
+                  padding-top: 20px;
+                  padding-left: 20px;
+                  color: #7a7a7a;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 120%; /* 19.2px */
+                "
+              >
+                Номер телефона
+              </p>
+            </div>
+          </div>
+          <div class="s12-b">
+            <div class="s12-bb">
+              <p
+                style="
+                  padding-top: 20px;
+                  padding-left: 20px;
+                  color: #7a7a7a;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 120%; /* 19.2px */
+                "
+              >
+                Ваш сервисный центр
+              </p>
+            </div>
+            <div class="s12-bb">
+              <p
+                style="
+                  padding-top: 20px;
+                  padding-left: 20px;
+                  color: #7a7a7a;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 120%; /* 19.2px */
+                "
+              >
+                Имя вашего мастера
+              </p>
+            </div>
+          </div>
+          <div class="s12-fut">
+            <p style="margin-bottom: 20px; margin-left: 150px">Ваша оценка</p>
+            <div style="display: flex; flex-wrap: wrap" class="s12-fut1">
+              <img src="./img/звездочки (2).svg" alt="" />
+
+              <p class="s12-button">ОТПРАВИТЬ</p>
+              <p class="s12-button2" style="text-align: center">ОТМЕНА</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="fut">
+      <div class="fff" style="display: flex; justify-content: space-around; flex-wrap: wrap; width: 100%; background: #f0f0f0; margin-top: 150px;">
+        <p style="margin-top: 30px;">О платформе</p>
+        <p style="margin-top: 30px; border-bottom: 1px solid black;">Выбрать сервисный центр</p>
+        <img src="./img/samsung_logo_PNG6 1.png" alt="" style="padding: 0px 50px; padding-right: 150px;">
+        <p style="margin-top: 30px; border-bottom: 1px solid black; padding-bottom: -5px;">Оставить отзыв</p>
+        <p style="margin-top: 30px;">Контакты</p>
+      </div>
+    </footer>
+    <footer>
+      <div class="fff-m" style="text-align: center; background: #f0f0f0; margin-top: 150px;">
+        <img src="./img/samsung_logo_PNG6 1.png" alt="" style="padding: 0px 0px; ">
+        <p style="margin-top: 20px;">О платформе</p>
+        <p style="margin-top: 20px; ">Выбрать сервисный центр</p>
+        <p style="margin-top: 20px;  ">Оставить отзыв</p>
+        <p style="margin-top: 20px;">Контакты</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

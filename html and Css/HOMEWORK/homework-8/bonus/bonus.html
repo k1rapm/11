@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(./img/chai-lai-orchid-jungle-bg-scaled.jpg);
+  opacity: 70%;
+  background-size: cover;
+}
+
+.container {
+  width: 400px;
+  margin: 200px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input{
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+label{
+  margin-left: 8px;
+  color: rgb(99, 142, 100);
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2 style="padding-bottom: 30px;">Registration Form</h2>
+  <form>
+    <label for="name">Enter Name/ID</label>
+    <input type="text" placeholder="Name/ID" name="name" id="name" required><br><br>
+    <label for="EMAIL">Enter Email</label>
+    <input type="email" placeholder="Email" name="email " id="EMAIL" required><br><br>
+    <label for="pas">Create Pasword</label>
+    <input type="password" placeholder="Create Pasword" name="password" id="pas" required><br><br>
+    <label for="rp">Repat Password</label>
+    <input type="password" placeholder="Repat Password" name="password" id="rp" required><br><br>
+    <button type="submit"><a href="./hello.html" style="color: white; text-decoration: 1;">Sign Up</a></button>
+  </form>
+  <p style="text-align: center;">Already Have Account <a href="./bonus2.html">login</a></p>
+</div>
+
+</body>
+</html>

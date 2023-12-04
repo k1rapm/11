@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>h/w-12</title>
+    <link rel="stylesheet" href="./s.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav1">
+        <img src="./img/logo.svg" alt="" class="logo" />
+        <p>Services</p>
+        <p>Product</p>
+        <p>Technology</p>
+        <p>About</p>
+        <p>Client</p>
+        <p>Partner</p>
+        <img
+          src="./img/home-logo.svg"
+          alt=""
+          class="icon"
+          style="margin-left: 150px"
+        />
+        <img src="./img/mail-logo.svg" alt="" class="icon" />
+        <img src="./img/shuffle-logo.svg" alt="" class="icon" />
+      </div>
+    </header>
+    <main>
+      <section id="s1">
+        <div class="s1">
+          <div class="s1-text">
+            <p class="s1-text1">
+              Making the most of the <br />ever-growing <br /><span
+                >Information Technology</span
+              >
+            </p>
+            <p class="s1-text2">
+              Managed by a team of professional experts with extensive<br />
+              experience and impressive track records
+            </p>
+            <p class="s1-b">Read More</p>
+          </div>
+          <div class="s1-img">
+            <img src="./img/img-1.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="s2">
+        <div class="s2">
+          <div class="s2-img"><img src="./img/img-2.png" alt="" /></div>
+          <div class="s2-text">
+            <p class="s2-text1">
+              Welcome to <span> Dwidasa Samsara Indonesia (DSI)</span>
+            </p>
+            <p class="s2-text2">
+              Dwidasa Samsara Indonesia (DSI) was firstly established in 2010 by
+              the founders, who each of them has a common end objective to
+              innovate new creations by making the most of the ever-growing
+              information technology through DSI’s distinct front-end based
+              application concept.
+            </p>
+            <p class="s2-text3">
+              Managed by a team of professional experts with extensive
+              experience and impressive track records, DSI believes that
+              continuous improvements and innovations assure your business to
+              run effectively and efficiently.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="s3">
+        <p class="s3p">Product and Service</p>
+        <div class="s3">
+          <div class="s3-block">
+            <img src="./img/our-product.svg" alt="s3-block-img" />
+            <p class="s3-text1">Our Product</p>
+            <p class="s3-text2">
+              Our product is made on the base of our teams careful research and
+              analyses, ranging from internet based <br />
+              application.
+            </p>
+            <p class="s3-text3">Read More</p>
+          </div>
+          <div class="s3-block">
+            <img src="./img/our-servise.svg" alt="s3-block-img" />
+            <p class="s3-text1">Our Service</p>
+            <p class="s3-text2">
+              DSI’s shared service solutions focus on the front-end based
+              software development, designed specifically for the banking and
+              financial sectors.
+            </p>
+            <p class="s3-text3">Read More</p>
+          </div>
+          <div class="s3-block">
+            <img src="./img/our-tecnologe.svg" alt="s3-block-img" />
+            <p class="s3-text1">Our Technology</p>
+            <p class="s3-text2">
+              First JAVA, runs on more than 850 million personal computers
+              worldwide, and on billions of devices worldwide, including mobile
+              and TV devices.
+            </p>
+            <p class="s3-text3">Read More</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="f-block">
+          <img src="./img/logo.svg" alt="logo" />
+          <p><b>PT Dwidasa Samsara Indonesia</b></p>
+          <p class="f-text">Ruko Jalur Sutera 29A No. 53</p>
+          <p class="f-text">Alam Sutera Serpong, Tangerang 15323</p>
+        </div>
+        <div class="f-block2">
+          <p class="c">Contact</p>
+          <p class="f-text">Phone : +62.21.5314.1135</p>
+          <p class="f-text">Fax : +62.21.5314.1135</p>
+          <p class="f-text">Email : community@dwidasa.com</p>
+        </div>
+      </div>
+      <div class="redline">
+        <p>Copyright © 2015 - Dwidasa Samsara Indonesia</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- 
+$font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+  Arial, sans-serif;
+$color: $color;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: $font;
+}
+.nav {
+  display: flex;
+}
+.nav1 {
+  margin-top: 20px;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 2px solid gray;
+  position: fixed;
+  width: 100%;
+  .logo {
+    margin-left: 150px;
+  }
+
+  p {
+    margin-left: 70px;
+    margin-top: 20px;
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 2px;
+    text-align: left;
+  }
+  .icon {
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+}
+
+.nav :nth-child(2) {
+  margin-left: 200px;
+}
+@mixin redbutton($w, $h) {
+  background-color: $color;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+  margin-top: 50px;
+  width: $w;
+  height: $h;
+  border-radius: 4px;
+  gap: 10px;
+}
+
+.s1 {
+  margin-top: 300px;
+  margin-left: 200px;
+  display: flex;
+  .s1-text1 {
+    color: #1f2e35;
+    font-family: $font;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 133.687%;
+  }
+  span {
+    color: $color;
+  }
+  .s1-text2 {
+    color: #30444e;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144.687%; /* 28.937px */
+    margin-top: 50px;
+  }
+  .s1-b {
+    @include redbutton(200px, 40px);
+  }
+}
+.s1-img {
+  margin-left: 150px;
+}
+#s2 {
+  background-color: #f6f6f6;
+  padding-bottom: 50px;
+}
+.s2 {
+  margin-top: 100px;
+  margin-left: 200px;
+  display: flex;
+  width: 1200px;
+  .s2-text {
+    margin-top: 70px;
+    margin-left: 200px;
+  }
+  .s2-text1 {
+    color: #1f2e35;
+    font-family: $font;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 133.687%; /* 42.78px */
+  }
+  span {
+    color: $color;
+  }
+  .s2-text2,
+  .s2-text3 {
+    margin-top: 30px;
+    color: #30444e;
+    font-family: $font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+  }
+}
+.s3 {
+  .s3-block {
+    width: 200px;
+  }
+  .s3-text1 {
+    color: $color;
+    font-family: $font;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    
+  }
+  .s3-text2 {
+    color: #30444e;
+    font-family:$font ;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+  }
+  .s3-text3 {
+    background-color: $color;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    margin-top: 50px;
+    width: 1040px;
+    height: 40px;
+    border-radius: 4px;
+  } -->

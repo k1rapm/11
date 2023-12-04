@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      .nav {
+        display: flex;
+        position: sticky;
+        top: 0px;
+        margin-top: -240px;
+      }
+      .nav p {
+        padding-bottom: 20px;
+        margin-left: 100px;
+        color: #686868;
+
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 30px;
+      }
+      .nav :nth-child(2) {
+        color: black;
+        margin-left: 500px;
+      }
+      .nav2 {
+        display: flex;
+      }
+      .nav2 p {
+        padding-bottom: 20px;
+        margin-left: 100px;
+        color: #686868;
+
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 30px;
+      }
+      .nav2 :nth-child(2) {
+        color: black;
+        margin-left: 570px;
+      }
+      .s2 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+      }
+      .s2-block p {
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .s3-oll {
+        display: flex;
+      }
+      .s3 {
+        padding: 50px;
+      }
+      .s4-block {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+      }
+      .s4-block p {
+        margin-top: 20px;
+        font-family: sans-serif;
+      }
+      .s5 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        width: 86.8%;
+        height: 300px;
+        padding: 50px 100px;
+        background-color: rgba(46, 47, 50, 1);
+        color: rgb(192, 186, 186);
+        font-size: 20px;
+      }
+      .column1 {
+        width: 290px;
+        line-height: 28px;
+      }
+      .column_h1 {
+        font-size: 40px;
+        color: white;
+        margin-bottom: 20px;
+      }
+      .icons {
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        margin-top: 40px;
+      }
+      .column2 {
+        line-height: 26px;
+      }
+      .column2_h1 {
+        font-size: 30px;
+        color: white;
+        margin-bottom: 20px;
+      }
+      .column2 p {
+        margin-bottom: 13px;
+      }
+      .column3 {
+        line-height: 30px;
+      }
+      .column3 a {
+        color: rgb(192, 186, 186);
+        font-size: 20px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <p
+        style="
+          font-family: sans-serif;
+          font-size: 42px;
+          font-weight: 600;
+          line-height: 50px;
+          letter-spacing: 0em;
+          text-align: left;
+        "
+      >
+        ArchiWeb
+      </p>
+      <p style="margin-top: 50px">Home</p>
+      <p style="margin-top: 50px">Projects</p>
+      <p style="margin-top: 50px">About</p>
+      <p style="margin-top: 50px">Contact</p>
+      <img
+        src="./img/Vector.svg"
+        alt="serch"
+        style="margin-top: 20px; margin-left: 100px"
+      />
+    </header>
+    <main>
+      <section id="1">
+        <div
+          style="
+            z-index: 1;
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(
+              91deg,
+              rgba(244, 246, 245, 0.9) -7.89%,
+              rgba(255, 255, 255, 0.9) 132.55%
+            );
+            padding: 80px;
+            margin-top: 350px;
+          "
+        >
+          <p
+            style="
+              color: #2f2e2e;
+
+              font-family: sans-serif;
+              font-size: 51px;
+              font-style: normal;
+              font-weight: 900;
+            "
+          >
+            Best Solution For <br />
+            Your Home
+          </p>
+          <br />
+          <p
+            style="
+              color: #2f2e2e;
+
+              font-family: sans-serif;
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 200;
+            "
+          >
+            Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit ut
+            <br />
+            aliquam, purus sit amet
+          </p>
+        </div>
+        <img
+          src="./img/pexels-expect-best-323780 1.png"
+          alt="bg1"
+          style="position: absolute; top: 150px; z-index: -1; right: 0px"
+        />
+      </section>
+      <section id="2">
+        <div
+          style="
+            background-color: #254d4d33;
+            width: 100%;
+            margin-top: 119px;
+            height: 500px;
+          "
+        >
+          <p
+            style="
+              margin-top: 20px;
+              color: #2f2e2e;
+              text-align: center;
+              font-family: sans-serif;
+              font-size: 51px;
+              font-style: normal;
+              font-weight: 900;
+            "
+          >
+            Our Services
+          </p>
+          <div class="s2">
+            <div class="s2-block">
+              <img
+                src="./img/Group 4.svg"
+                alt="group"
+                style="margin-left: 30px"
+              />
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  text-align: center;
+                  font-size: 27px;
+                  font-style: normal;
+                  font-weight: 900;
+                "
+              >
+                Planning
+              </p>
+              <p>
+                Our Services Line one <br />
+                Servive line two
+              </p>
+            </div>
+            <div class="s2-block">
+              <img
+                src="./img/Group 5.svg"
+                alt="group"
+                style="margin-left: 30px"
+              />
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  text-align: center;
+                  font-size: 27px;
+                  font-style: normal;
+                  font-weight: 900;
+                "
+              >
+                Interior
+              </p>
+              <p>
+                Our Services Line one <br />
+                Servive line two
+              </p>
+            </div>
+            <div class="s2-block">
+              <img
+                src="./img/Group 6.svg"
+                alt="group"
+                style="margin-left: 30px"
+              />
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  text-align: center;
+                  font-size: 27px;
+                  font-style: normal;
+                  font-weight: 900;
+                "
+              >
+                Exterior
+              </p>
+              <p>
+                Our Services Line one <br />
+                Servive line two
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="3">
+        <div class="s3-oll">
+          <div class="s3">
+            <img src="./img/pexels-anete-lusina-4792491 1.png" alt="" />
+          </div>
+          <div class="s3">
+            <p
+              style="
+                color: #2f2e2e;
+
+                font-family: sans-serif;
+                font-size: 51px;
+                font-style: normal;
+                font-weight: 900;
+                margin-top: 100px;
+              "
+            >
+              About Us
+            </p>
+            <p
+              style="
+                color: #2f2e2e;
+
+                font-family: sans-serif;
+                font-size: 31px;
+                font-style: normal;
+                font-weight: 400;
+                margin-top: 50px;
+              "
+            >
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit ut <br />
+              aliquam, purus sit amet luctus <br />
+              venenatis, lectus magna fringilla <br />
+              urna, porttitor
+            </p>
+            <p
+              style="
+                color: #2f2e2e;
+
+                font-family: Inter;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                margin-top: 50px;
+              "
+            >
+              Read more
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="4">
+        <div class="nav2">
+          <p
+            style="
+              font-family: sans-serif;
+              font-size: 42px;
+              font-weight: 600;
+              line-height: 50px;
+              letter-spacing: 0em;
+              text-align: left;
+              margin-left: 150px;
+            "
+          >
+            Our Projects
+          </p>
+          <p style="margin-top: 50px">All</p>
+          <p style="margin-top: 50px">Furniture</p>
+          <p style="margin-top: 50px">Design</p>
+          <p style="margin-top: 50px">House</p>
+        </div>
+        <div class="s4">
+          <div class="s4-block">
+            <div class="s4-b">
+              <img
+                src="./img/douglas-sheppard-9rYfG8sWRVo-unsplash.png"
+                alt="s4-block-img"
+                style="width: 350px; height: 200px"
+              />
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  text-align: center;
+                  font-family: sans-serif;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                "
+              >
+                Our Services Line one <br />
+                Servive line two
+              </p>
+            </div>
+            <div class="s4-b">
+              <img
+                src="./img/webaliser-_TPTXZd9mOo-unsplash.png"
+                alt="s4-block-img"
+                style="width: 350px; height: 200px"
+              />
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  text-align: center;
+                  font-family: sans-serif;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                "
+              >
+                Our Services Line one <br />
+                Servive line two
+              </p>
+            </div>
+            <div class="s4-b">
+              <img
+                src="./img/brian-babb-XbwHrt87mQ0-unsplash.png"
+                alt="s4-block-img"
+                style="width: 350px; height: 200px"
+              />
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  text-align: center;
+                  font-family: sans-serif;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                "
+              >
+                Our Services Line one <br />
+                Servive line two
+              </p>
+            </div>
+          </div>
+          <div class="s4-block">
+            <div class="s4-b">
+              <img
+                src="./img/spacejoy-KSfe2Z4REEM-unsplash.png"
+                alt="s4-block-img"
+                style="width: 350px; height: 200px"
+              />
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  text-align: center;
+                  font-family: sans-serif;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                "
+              >
+                Our Services Line one <br />
+                Servive line two
+              </p>
+            </div>
+            <div class="s4-b">
+              <img
+                src="./img/ralph-ravi-kayden-JDBVXignFdA-unsplash.png"
+                alt="s4-block-img"
+                style="width: 350px; height: 200px"
+              />
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  text-align: center;
+                  font-family: sans-serif;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                "
+              >
+                Our Services Line one <br />
+                Servive line two
+              </p>
+            </div>
+            <div class="s4-b">
+              <img
+                src="./img/jonathan-borba-brXCnh_dXWU-unsplash.png"
+                alt="s4-block-img"
+                style="width: 350px; height: 200px"
+              />
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  text-align: center;
+                  font-family: sans-serif;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                "
+              >
+                Our Services Line one <br />
+                Servive line two
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="5">
+        <p
+          style="
+            margin-top: 150px;
+            color: #000;
+
+            text-align: center;
+            font-family: Playfair Display;
+            font-size: 51px;
+            font-style: normal;
+            font-weight: 900;
+          "
+        >
+          Testimonial
+        </p>
+        <div class="s5">
+          <div style="display: flex">
+            <div><img src="./img/Ellipse 9.svg" alt="" /></div>
+            <div style="margin-top: 20px; margin-left: 30px">
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  font-family: Playfair Display;
+                  font-size: 28px;
+                  font-style: normal;
+                  font-weight: 700;
+                "
+              >
+                James Passaquindici Arcand
+              </p>
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  font-family: Playfair Display;
+                  font-size: 17px;
+                  font-style: normal;
+                  font-weight: 400;
+                  margin-top: 20px;
+                "
+              >
+                Lorem ipsum dolor sit amet, <br />
+                consectetur adipiscing elit ut <br />
+                aliquam, purus sit amet luctus venenatis
+              </p>
+            </div>
+          </div>
+          <div style="display: flex">
+            <div><img src="./img/Ellipse 10.svg" alt="" /></div>
+            <div style="margin-top: 20px; margin-left: 30px">
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  font-family: Playfair Display;
+                  font-size: 28px;
+                  font-style: normal;
+                  font-weight: 700;
+                "
+              >
+                Abram Schleifer
+              </p>
+              <p
+                style="
+                  color: #2f2e2e;
+
+                  font-family: Playfair Display;
+                  font-size: 17px;
+                  font-style: normal;
+                  font-weight: 400;
+                  margin-top: 20px;
+                "
+              >
+                Lorem ipsum dolor sit amet, <br />
+                consectetur adipiscing elit ut <br />
+                aliquam, purus sit amet luctus venenatis
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            width: 100px;
+            justify-content: space-evenly;
+            margin-left: 800px;
+            margin-top: 100px;
+            margin-bottom: 50px;
+          "
+        >
+          <img src="./img/Ellipse 11.svg" alt="elips11" />
+          <img src="./img/Ellipse 13.svg" alt="elips11" />
+          <img src="./img/Ellipse 13.svg" alt="elips11" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="column1">
+        <h1 class="column_h1">ArchiWeb</h1>
+        <p>
+          Archiweb is an architectural consultant based in Berlin, Germany. We
+          provide solutions for your architecture and residential design
+        </p>
+        <div class="icons">
+          <img src="./img/Vector (1).svg" alt="" />
+          <img src="./img/Vector (2).svg" alt="" />
+          <img src="./img/Group 7.svg" alt="" />
+        </div>
+      </div>
+      <div class="column2">
+        <h1 class="column2_h1">Articles</h1>
+        <p>
+          7 Tips for Kids Friendly <br />
+          Interior Design
+        </p>
+        <p>
+          Smart Tips for Changing <br />
+          a Room
+        </p>
+        <p>Eco-friendly design</p>
+      </div>
+      <div class="column3">
+        <h1 class="column2_h1">Links</h1>
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+      </div>
+      <div>
+        <h1 class="column2_h1">Lacation</h1>
+        <img src="./img/Basemap image.png" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>
